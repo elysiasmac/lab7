@@ -44,3 +44,9 @@ app.get('/project/:id', project.view);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+
+//register the experimental condition
+app.get('viewAlt', index.viewAlt); 
+
+
